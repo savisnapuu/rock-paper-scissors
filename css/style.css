@@ -12,7 +12,7 @@
 
 .container-newgame {
   background-color: #35595d;
-  padding: 60px 30px;
+  padding: 40px 40px;
   border: 12px solid white;
   text-align: center;
 }
@@ -205,7 +205,6 @@ button:hover {
 
 footer {
   padding-bottom: 5px;
-  margin-top: 30px;
   color: #f2f0df;
 }
 
@@ -313,6 +312,7 @@ table {
   width: 700px;
   margin-top: 20px;
   overflow: auto;
+  margin-bottom: 20px;
 }
 
 .table-head-sticky {
