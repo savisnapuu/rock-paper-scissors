@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <div>
+      <div class="cloud one"><img src="img/cloudimg.png" /></div>
+      <div class="cloud two"><img src="img/cloudimg.png" /></div>
+      <div class="cloud three"><img src="img/cloudimg.png" /></div>
+    </div>
+
+    <div id="background-main"></div>
+    <div id="container-main">
+      <div id="new-game-modal">
+        <div>
+          <h1 id="new-game-modal-result">You won/lost!</h1>
+        </div>
+        <div><button id="new-game-modal-btn">Play again</button></div>
+      </div>
+      <div id="modal-overlay"></div>
+      <div id="container-newgame">
+        <div class="container-newgame">
+          <h1>Rock Paper Scissors</h1>
+          <button id="new-game">New Game</button>
+        </div>
+      </div>
+      <!-- Game window after pressing "New Game" button starts here -->
+      <div class="container" id="game-window" style="display: none">
+        <div style="width: 800px; text-align: center">
+          <h1 class="game-header">First to score 5 points wins the game!</h1>
+        </div>
+        <div class="game-options">
+          <div class="player-options">
+            <div class="options-head">
+              <h1>Player</h1>
+            </div>
+            <div class="options-body">
+              <div class="poptions rockBtn">
+                <img src="img/rock.png" />
+              </div>
+              <div class="poptions paperBtn">
+                <img src="img/paper.png" />
+              </div>
+              <div class="poptions scissorsBtn">
+                <img src="img/scissors.png" />
+              </div>
+            </div>
+            <div class="game-score">
+              <h2>Score</h2>
+              <h1 id="player-score">0</h1>
+            </div>
+          </div>
+          <div class="computer-options">
+            <div class="options-head">
+              <h1>Computer</h1>
+            </div>
+            <div class="options-body">
+              <div class="coptions rockBtn" id="computer-rock">
+                <img src="img/rock.png" />
+              </div>
+              <div class="coptions paperBtn" id="computer-paper">
+                <img src="img/paper.png" />
+              </div>
+              <div class="coptions scissorsBtn" id="computer-scissors">
+                <img src="img/scissors.png" />
+              </div>
+            </div>
+            <div class="game-score">
+              <h2>Score</h2>
+              <h1 id="computer-score">0</h1>
+            </div>
+          </div>
+        </div>
+        <div id="game-table"></div>
+      </div>
+      <footer>Copyright © 2022 savisnapuu</footer>
+    </div>
+
+    <!-- Game window after pressing "New Game" button ends here -->
+
+    <!--<div>
+      <button id="rock">Rock</button>
+      <button id="paper">Paper</button>
+      <button id="scissors">Scissors</button>
+    </div>
+    <div id="content"></div> -->
+
+    <script src="js/javascript.js"></script>
+  </body>
+</html>
