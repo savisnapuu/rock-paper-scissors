@@ -16,7 +16,6 @@ let conclusion;
 let playerSelection;
 let computerSelection;
 
-
 playerOptions.forEach((option) => {
     option.addEventListener("click", function () {
         if(option.classList.contains("rockBtn")){
@@ -51,9 +50,13 @@ function openModal(){
             resetScore();
         })
         if(counter === 5){
-            document.getElementById("new-game-modal-result").textContent = "You win!"
+            document.getElementById("new-game-modal-result").textContent = "You win!";
+            document.getElementById("new-game-modal").style.background = "#35595d";
+            document.getElementById("new-game-modal-btn").style.background = "#00a9c2";
         } else if(counterComputer === 5){
-            document.getElementById("new-game-modal-result").textContent = "You lost!"
+            document.getElementById("new-game-modal-result").textContent = "You lost!";
+            document.getElementById("new-game-modal").style.background = "#b94a4a";
+            document.getElementById("new-game-modal-btn").style.background = "#3b3b3b";
         }
     }
 }
