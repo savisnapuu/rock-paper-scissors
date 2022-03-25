@@ -11,10 +11,11 @@ buttonNewGame.addEventListener("click", () => {
 const playerOptions = document.querySelectorAll(".poptions");
 let counter = 0;
 let counterComputer = 0;
+let roundCounter = 0;
 let conclusion;
 let playerSelection;
 let computerSelection;
-let roundCounter = 0;
+
 
 playerOptions.forEach((option) => {
     option.addEventListener("click", function () {
@@ -50,7 +51,7 @@ function openModal(){
             resetScore();
         })
         if(counter === 5){
-            document.getElementById("new-game-modal-result").textContent = "You won!"
+            document.getElementById("new-game-modal-result").textContent = "You win!"
         } else if(counterComputer === 5){
             document.getElementById("new-game-modal-result").textContent = "You lost!"
         }
@@ -96,7 +97,6 @@ function changeComputerColor(){
 
 function compareChoices(playerSelection, computerSelection){
     if(playerSelection === computerSelection){
-        console.log(`It is a DRAW!`);
         conclusion = "draw";
     } else if(playerSelection === "Rock" && computerSelection === "Scissors") {
         conclusion = "win";       
