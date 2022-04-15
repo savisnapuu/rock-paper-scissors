@@ -47,9 +47,13 @@ button:hover {
 
 .container-newgame {
   background-color: #35595d;
-  padding: 50px 40px;
+  padding: 50px 45px;
   border: 12px solid white;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
 }
 
 #container-newgame {
@@ -73,7 +77,8 @@ button:hover {
 .container-newgame h1 {
   font-size: 60px;
   color: white;
-  margin: 15px 0;
+  margin: 0;
+  margin-top: 5px;
 }
 
 #game-window {
@@ -234,11 +239,12 @@ button:hover {
   font-size: 25px;
   color: white;
   gap: 8px;
-  padding: 50px 60px 50px 60px;
+  padding: 45px;
 }
 
 #new-game-modal h1 {
   margin: 0;
+  margin-top: 2px;
 }
 
 #new-game-modal.active {
